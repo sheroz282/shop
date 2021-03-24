@@ -27,7 +27,7 @@ class Router
 
             include_once __DIR__ . "/../../../" . $this->side . "/src/Controller/" . $controller . '.php';
 
-            $action = $_GET['action'] ?? 'index';
+            $action = $_GET['action'] ?? 'all';
             $action = htmlspecialchars($action);
 
             if (isset($action)) {

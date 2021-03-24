@@ -8,7 +8,7 @@ abstract class AbstractModel
 	
 	public function __construct()
 	{
-		$this->conn = DBConnector::getInstance()->connect();
+		 $this->conn = DBConnector::getInstance()->connect();
 	}
 }
 

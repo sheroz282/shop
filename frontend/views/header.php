@@ -1,8 +1,12 @@
 <?php
     include_once __DIR__ . "/../../common/src/Service/UserService.php";
     include_once __DIR__ . "/../../common/src/Service/CategoryService.php";
-    
+    include_once __DIR__ . "/../../common/src/Service/BasketDBService.php";
+    include_once __DIR__ . "/../../common/src/Service/ProductService.php";
+
 	$currentUser = UserService::getCurrentUser();
+    $basketDetails = (new ProductService())->getBasketItems(BasketDBService::defineBasketDetails());
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,8 +60,8 @@
                         </form>
                     </div>
                     <div id="basket-container">
-                        <div>Your cart<span>(2items)</span></div>
-                        <div><b>$125.0</b><a href="#">Checkout</a></div>
+                        <div>Your cart<span>(<?=sizeof($basketDetails['items'] ?? [])?>items)</span></div>
+                        <div><b>$<?=$basketDetails['total'] ?? 0 ?></b><a href="#">Checkout</a></div>
                     </div>
                     <div id="favor">
                         <div>Wish list</div>

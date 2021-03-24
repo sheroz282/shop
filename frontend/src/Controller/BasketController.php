@@ -17,6 +17,10 @@ class BasketController
     public $items;
     public $basketService;
  
+    /**
+     * BasketController constructor.
+     * @throws Exception
+     */
     public function __construct()
     {
         $this -> user = UserService::getCurrentUser();
@@ -25,11 +29,12 @@ class BasketController
             throw new Exception('No permission', 404);
         } 
 
-        $this -> basket = BasketDBService::getBasketByUserId($this -> user['id']);  
-        $this -> basketService = new BasketDBService();
+        $this->basket = BasketDBService::getBasketByUserId($this -> user['id']);  
+        $this->basketService = new BasketDBService();
        // $this -> basketService = new BasketSessionService();
        // $this -> basketService = new BasketCookieService();
-        $this -> items = $this -> basketService -> getBasketProducts((int)$this -> basket['id']);
+        
+       $this->items = BasketDBService::defineBasketDetails(); 
     }
 
     public function addProduct()
@@ -50,14 +55,14 @@ class BasketController
             }
         }
  
-        $this->basketService->createBasketItem($this -> basket['id'], $productId, $qty);
+        $this->basketService->createBasketItem($this->basket['id'], $productId, $qty);
 
         $this->redirectToBasket();
     }
 
     public function view()
     {
-        $result = (new ProductService()) -> getBasketItems($this->items);
+        $result = (new ProductService())->getBasketItems($this->items);
         $items = $result['items'];
         $total = $result['total'];
 

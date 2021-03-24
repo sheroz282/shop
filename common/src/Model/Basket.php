@@ -1,18 +1,16 @@
 <?php
 
 include_once __DIR__ . "/../Service/DBConnector.php";
-
-class Basket
+include_once __DIR__ . "/AbstractModel.php";
+class Basket extends AbstractModel
 {
     public $id;
     public $userId;
     public $items = [];
 
-    private $conn;
-
     public function __construct( $userId = null )
     {
-    	$this->conn = DBConnector::getInstance()->connect();
+    	parent::__construct();
     	$this->userId = $userId;
     }
 

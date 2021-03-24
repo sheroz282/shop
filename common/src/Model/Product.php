@@ -17,8 +17,6 @@ class Product extends AbstractModel
     public $created;
     public $updated;
 
-  
-
     public function __construct(
 		$id = null, 
 		$title = null, 
