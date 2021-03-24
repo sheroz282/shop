@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="head">
+            <div class="top">
+                <div class="width1024">
+                    <ul class="desktop-element">
+                        <li> <a href="">Sing in</a></li>
+                        <li> <a href="">My Account</a></li>
+                        <li> <a href="">Order Status</a></li>
+                        <li> <a href="">Help</a></li>
+                    </ul>
+                    <div id="mobile-logo" class="mobile-element">BOOKS</div>
+                    <select id="top-link" onchange="document.location=this.value" class="mobile-element form-control">
+                        <option disable selected></option>
+                        <option value="#sign">Sing in</option>
+                        <option value="#acount">My Account</option>
+                        <option value="#order">Order Status</option>
+                        <option value="#help">Help</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="header-panel">
+                <div class="width1024 flex">
+                    <div id="logo">
+                        <a href="/"><img src="img/logo.png"></a>
+                    </div>
+                    <div id="search-field">
+                        <form action="#">
+                            <input type="text" name="search_text">
+                            <button>Search</button>
+                        </form>
+                    </div>
+                    <div id="basket-container">
+                        <div>Your cart<span>(2items)</span></div>
+                        <div><b>$125.0</b><a href="#">Checkout</a></div>
+                    </div>
+                    <div id="favor">
+                        <div>Wish list</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="width1024 desktop-element">
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Cooking</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Fiction</a></li>
+                <li class="active"><a href="#">Health</a></li>
+                <li><a href="#">Matematics</a></li>
+                <li><a href="#">Medical</a></li>
+                <li><a href="#">Reference</a></li>
+                <li><a href="#">Science</a></li>
+            </ul>
+            <select onchange="document.location=this.value" class="mobile-element">
+                <option disabled selected></option>
+                <option value="#computers">Computers</option>
+                <option value="#cooking">Cooking</option>
+                <option value="#education">Education</option>
+                <option value="#fiction">Fiction</option>
+                <option value="#health">Health</option>
+                <option value="#matematics">Matematics</option>
+                <option value="#medical">Medical</option>
+                <option value="#reference">Reference</option>
+                <option value="#science">Science</option>
+            </select>
+        </nav>
+    </header>
+    <div id="content" class="width1024">
+        <div id="sidebar">
+            <h3>Categories</h3>
+            <div class="mobile-element">
+                <select onchange="document.location=this.value">
+                    <option>All</option>
+                    <optgroup label="Fiction & Literature">
+                        <option value="#Children">Children</option>
+                        <option value="#Science">Science Fiction</option>
+                        <option value="#">Fantasy</option>
+                        <option value="#">Mystery</option>
+                        <option value="#">Romance</option>
+                    </optgroup>
+                    <optgroup label="Non - Fiction">
+                        <option value="#Children">Children</option>
+                        <option value="#Science">Science Fiction</option>
+                        <option value="#">Fantasy</option>
+                        <option value="#">Mystery</option>
+                        <option value="#">Romance</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="categories desktop-element">
+                <div class="categories-group">
+                    <ul>
+                        <li class="active"><a href="#">All</a></li>
+                    </ul>
+                </div>
+                <div class="categories-group">
+                    <h4>Fiction & Literature</h4>
+                    <ul>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Poetry</a></li>
+                        <li><a href="#">Literature</a></li>
+                        <li><a href="#">Crime</a></li>
+                    </ul>
+                </div>
+                <div class="categories-group">
+                    <h4>Non - Fiction</h4>
+                    <ul>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Poetry</a></li>
+                    </ul>
+                </div>
+                <div class="categories-group">
+                    <h4>Other</h4>
+                    <ul>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Mystery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div id="products-list">
+                <ul>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                    <li>
+                        <img src="img/sole30.png">
+                        <a href="#"><img src="img/saled01.jpg"></a>
+                        <h4><a href="">The Hare With Amber Eyes</a></h4>
+                        <div class="price">$45.00</div>
+                    </li>
+                </ul>
+                <div class="pager">
+                    <div class="link-to-begin"><a href="#"><<</a></div>
+                    <div class="link-to-left"><a href="#"><</a></div>
+                    <div class="link-pager"><a href="#">1</a></div>
+                    <div class="link-pager"><a href="#">2</a></div>
+                    <div class="link-pager current"><a href="#">3</a></div>
+                    <div class="link-pager"><a href="#">4</a></div>
+                    <div class="link-pager"><a href="#">5</a></div>
+                    <div class="link-to-right"><a href="#">></a></div>
+                    <div class="link-to-end"><a href="#">>></a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <nav class="width1024">
+            <div class="categories-group">
+                <h4>Biography & True Stories</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+            <div class="categories-group">
+                <h4>Professional & Reference</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+            <div class="categories-group">
+                <h4>Earth Sciences</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+            <div class="categories-group">
+                <h4>Mathematics</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="payments-system">
+            <div>We accept all major Credit Cart/Debit Cart/Internet Banking</div>
+            <div><img src="img/payments01.jpg"><img src="img/payments02.jpg"><img src="img/payments03.jpg"></div>
+        </div>
+        <div class="info">
+            Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+#access-table thead td div {
+    position: relative;
+    height: 200px;
+}
+
+#access-table thead td div span {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 90px;
+    left: -96px;
+    width: 200px;
+    height: 20px;
+}

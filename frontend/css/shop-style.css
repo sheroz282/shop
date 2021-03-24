@@ -1,0 +1,47 @@
+.body h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 10px;
+}
+
+.body form {
+    width: 300px;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+.body form input[type=text], 
+.body form input[type=email], 
+.body form input[type=password], 
+.body form select {
+    padding: 5px 0;
+    line-height: 20px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.body form select {
+    padding: 10px 0;
+    width: 305px;
+}
+
+.body form textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.body form label {
+    margin: 15px 0 5px;
+}
+
+#btn-create-order, 
+.body form input[type=submit],  
+.body form button {
+    text-decoration: none;
+    color: #fff;
+    background: #777;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+}
