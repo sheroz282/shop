@@ -61,7 +61,7 @@
                                     
                                 </div>
                                 <form id="comment-form" action="#">
-									<input type="hidden" name="product_id" value="<?$_GET['id'] ?? '' ?>"/>
+									<input type="hidden" name="product_id" value="<?=$_GET['id'] ?? '' ?>"/>
                                     <h4>Write a comment</h4>
                                     <div>
                                         <label>Your name</label>

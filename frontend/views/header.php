@@ -60,7 +60,7 @@
                         </form>
                     </div>
                     <div id="basket-container">
-                        <div>Your cart<span>(<?=sizeof($basketDetails['items'] ?? [])?>items)</span></div>
+                        <div>Your cart<span>(<?=sizeof($basketDetails['items'] ?? [])?> items)</span></div>
                         <div><b>$<?=$basketDetails['total'] ?? 0 ?></b><a href="#">Checkout</a></div>
                     </div>
                     <div id="favor">
